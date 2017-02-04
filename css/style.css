@@ -1,0 +1,86 @@
+body {
+	margin: 20px;
+}
+
+img {
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.nav-collection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	float: right;
+}
+
+.nav-item {
+	margin: 10px;
+	margin-right: 20px;
+}
+
+.description-customized {
+	color: #666;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.logo-img {
+	margin-right: 10px;
+}
+
+.jumbo-customized {
+	background-color: rgba(18, 229, 180, 0.12);
+	padding-top: 30px;
+}
+
+.jumbo-customized p, .center {
+ 	text-align: center;	
+}
+
+figure p {
+	margin-bottom: 15px!important;
+    margin-top: 10px;
+}
+
+.jumbo-customized p {
+	margin-bottom: 45px;
+}
+
+.about-me-text {
+	text-align: left;
+	margin-left: 15px;
+}
+
+.animated-customized-length {
+	-webkit-animation-duration: 5s;
+  	animation-duration: 5s;
+}
+
+.item-container {
+	margin-top: 30px;
+}
+
+.range-item {
+	margin-top: 20px;
+}
+
+.footer-customized {
+	background-color: transparent;
+    padding: 20px;
+}
+
+.content-center {
+	text-align: center;
+}
+
+.image {
+	width: 300px; 
+	height: auto;
+}
