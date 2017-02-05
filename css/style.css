@@ -29,6 +29,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+	float: left;
 }
 
 .logo-img {
