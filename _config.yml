@@ -14,7 +14,8 @@ img: "img/turquiosefoxlogo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  TurquoiseFox
+#github_username:  jekyll
 
 # Build settings
 markdown: kramdown
