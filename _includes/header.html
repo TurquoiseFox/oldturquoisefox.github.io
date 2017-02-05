@@ -1,9 +1,12 @@
 <header class="site-header">
-
-  <div class="wrapper">
-  <img src="{{ site.img }}" width="50" height="auto" />
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <p class="description-customized">{{ site.description }}</p>
+  <div class="wrapper row">
+    <div class="col-sm-6 logo">
+      <figure>
+        <img class="logo-img animated slideInLeft" width="20px" height="auto" src="{{ site.img }}" />
+      </figure>
+      <p class="description-customized animated slideInDown">{{ site.description }}</p>
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
