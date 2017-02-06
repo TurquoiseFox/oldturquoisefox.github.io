@@ -18,11 +18,10 @@
       </a>
       <!--<a class="site-title animated slideInDown" href="{{ site.baseurl }}/">{{ site.title }}</a>-->
 
-      <div class="trigger">
+      <div class="trigger animated slideInRight">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link animated slideInRight" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          <a class="page-link animated slideInDown" href="{{ site.baseurl }}/">{{ site.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
