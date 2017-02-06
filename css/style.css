@@ -13,7 +13,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	float: right;
+	/*float: right;*/
 }
 
 .nav-item {
