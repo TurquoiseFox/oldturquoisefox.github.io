@@ -13,7 +13,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	/*float: right;*/
+	float: right;
 }
 
 .nav-item {
@@ -21,15 +21,10 @@ img {
 	margin-right: 20px;
 }
 
-.description-customized {
-	color: #666;
-}
-
 .logo {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	float: left;
 }
 
 .logo-img {

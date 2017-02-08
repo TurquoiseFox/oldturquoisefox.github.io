@@ -1,23 +1,154 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Turquoise Fox</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="lib/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">  
+	</head>
+	<body ng-app="app">
+	<section ng-controller="main">
+		<header class="container">
+			<div class="row">
+				<div class="col-sm-6 logo">
+					<figure>
+						<img class="logo-img animated slideInLeft" width="20px" height="20px" src="img/turquiosefoxlogo.png">
+					</figure>
+					<p class="animated slideInDown">Portfolio of a Software Developer</p>
+				</div>
+				<nav class="navbar nav col-sm-6 nav-collection">				
+					<li class="nav-item animated slideInDown">about me</li>
+					<li class="nav-item animated slideInLeft">about this site</li>
+					<li class="nav-item animated slideInRight">contact</li>
+				</nav>			
+			</div>
+		</header>
+		<div class="container animated fadeIn animated-customized-length">
+			<div class="row">
+				<div class="jumbotron jumbo-customized">
+					<p>{{ name }} * {{ paging }}</p>
+					<input id="slider" type="range" min="{{ min }}" max="{{ max }}" value="{{ value }}" ng-model="value"/>
+					<!--<p>Value: <code ng-model="value">{{value}}</code><br/></p>-->
+					<div ng-if="value === 0" class="item-container">
+					Slide to learn more about me.
+						<figure class="range-item center animated fadeIn">
+							<img class="image" src="img/SylviasGroove1.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 0 && value < 10" class="item-container">
+					It's the 8th of September of the year 1970. I was conceived.
+						<figure class="range-item animated fadeIn">
+							<img width="1000" height="auto" src="img/what-happened.png">
+						</figure>
+						<figure class="range-item">
+							<img width="1000" height="auto" src="img/songs-sept-1970.png">
+						</figure>
+					</div>
+					<div ng-if="value > 9 && value < 20"  class="row item-container">
+					<div class="about-me-text">My birth on the 8th of June 1971.</div>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+						<p>Me...</p>
+							<img class="image" src="img/baby-syl.jpg">
+						</figure>
+						<figure class="col-sm-6 range-item center">
+						<p>My mom...</p>
+							<img class="image" src="img/mum-1970s.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 19 && value < 30" class="item-container">
+					1976: I start singing. Loved to sing to something Dutch called "Kinderen voor Kinderen". Later on, I start singing to music of Fame, Michael Jackson, Grease and Stevie Wonder. <br/> 1980: Soundmix-shows become totally hip and I start singing in these type of competitions.
+					<br/> In 1992 I discover the world of bands. Love to make music with other musicians!
+						<figure class="range-item center animated fadeIn">
+						<p>I look like a boy! Hahaha!</p>
+							<img class="image" src="img/Syl_teenager_Fame.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 29 && value < 40" class="row item-container">
+					<div class="about-me-text">I become a mother and singing lullabies for my child is the only singing I'll do for some years.</div>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+						<p>Proud mama!</p>
+							<img class="image" src="img/MamaSyl.jpg">
+						</figure>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+						<p>Sweethearts!</p>
+							<img class="image" src="img/BeauAlano.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 39 && value < 50" class="item-container">2000: The need to sing starts again. My friend Linn and I start a new vocal group: Soulmates. For this music adventure I start maintaining the content for our website, using Dreamweaver. My interest for building web applications has been roared. Though it won't be something I will seriously pursue for more than a decade.
+						<figure class="range-item center animated fadeIn">
+						<p>Soulmates</p>
+							<img class="image" src="img/Soulmates.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 49 && value < 60" class="row item-container">
+					<div class="about-me-text">2005: Soulmates ends and I start my own band: Sylvia's Groove! that will excist for 2 years. These are the cover photo's for the band website.</div>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+							<img class="image" src="img/SylviasGroove2.jpg">
+						</figure>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+							<img class="image" src="img/SylviasGroove1.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 59 && value < 70" class="row item-container">
+					<div class="about-me-text">It's 2008. My mariage ends, I start singing in a party band called: Superfly, where I'll sing for the next 5 years. For this band I'm in charge of the vocal arrangements, next to being one of the lead singers. Also, during this period I start my own school for singers, have an other baby and remarry.</div>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+						<p>Superfly Ladies.</p>
+							<img class="image" src="img/superfly-ladies.jpg">
+						</figure>
+						<figure class="col-sm-6 range-item center">
+						<p>Superfly gig.</p>
+							<img class="image" src="img/superfly.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 69 && value < 80" class="row item-container">
+					<div class="about-me-text">Fall of 2013: I start learning skills for coding just for fun on online courses. I re-discover how much I enjoy doing this, so I decide to see if anyone can offer me a place where I can learn to be a professional at it. A local company near my house offers me an internship and here I learn and work for the next year and a half. In the summer of 2014 I quit my school for singers and focus completely on my new career as a software developer.
+					Also, I start singing my own songs on stage.</div>
+						<figure class="col-sm-6 range-item center animated fadeIn">
+						<p>Singing my own songs.</p>
+							<img class="image" src="img/sylvia-sings.jpg">
+						</figure>
+						<figure class="col-sm-6 range-item center">
+						<p>With my husband Guido.</p>
+							<img class="image" src="img/sylvia-sings2.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 79 && value < 90" class="item-container">Fall of 2015: I start working for Sogeti Nederland. A fun employer who really knows how to put it's employees in their strength. Proud to work here!
+					2016: my first job for Raet (a client of Sogeti) in Amersfoort. I had so much fun as Frontend Developer in one of the Scrum teams. 
+					2017: working as Frontend Developer at Centraal Beheer Achmea (a client of Sogeti) in Apeldoorn.
+						<figure class="range-item center animated fadeIn">
+						<p>Introduction time!</p>
+							<img width="1000" height="auto" src="img/Groepsfoto-Sogeti.jpg">
+						</figure>
+					</div>
+					<div ng-if="value > 89 && value < 101" class="item-container">To be continued...
+					<figure class="range-item center animated fadeIn">
+							<img width="50" height="auto" src="img/turquiosefoxlogo.png">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
 
-<div class="home">
+	<footer>
+		<div class="jumbotron footer-customized animated slideInRight">
+			<p class="content-center">&copy; 2017 Turquoise Fox.</p>
+		</div>
+	</footer>
 
-  <h1 class="page-heading jumbotron">Posts</h1>
+<!-- Scripts -->
+	<!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="lib/bootstrap-gh-pages/ui-bootstrap-tpls-2.4.0.js"></script>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<!-- Modules -->
+    <script src="js/app.js"></script>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Directives -->
+    <script src="js/directives/app-info.js"></script>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <!-- Controllers -->
+    <script src="js/controllers/main.js"></script>
+	</body>
+</html>
